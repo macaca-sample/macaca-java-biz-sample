@@ -1,3 +1,7 @@
+# bootstrap
+
+基于Macaca-Java版的UI自动化实现demo
+
 ### 安装Macaca环境
 
 参考链接：[https://macacajs.github.io/macaca/getting-started.html](https://macacajs.github.io/macaca/getting-started.html)
