@@ -22,7 +22,6 @@ public class Config {
    public static final String REUSE = "3";
    
    // ios平台相关信息 各参数含义参考 https://macacajs.github.io/macaca/desired-caps.html
-   public static final String IOS_PLATFORM_VERSION = "9.2";
    public static final String IOS_PLATFORM_NAME = "iOS";
    public static final String IOS_DEVICE_NAME = "iPhone 6";
    public static final String IOS_APP = RootPath + File.separator + "app/ios-app-bootstrap.zip";

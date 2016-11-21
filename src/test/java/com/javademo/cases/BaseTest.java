@@ -38,7 +38,6 @@ public class BaseTest {
 			props.put("app", Config.IOS_APP);
 			props.put("platformName", Config.IOS_PLATFORM_NAME);
 			props.put("deviceName", Config.IOS_DEVICE_NAME);
-			props.put("platformVersion", Config.IOS_PLATFORM_VERSION);
 //			props.put("udid", Config.IOS_UDID);
 			driver.setCurPlatform(PlatformType.IOS);
 		} else {
