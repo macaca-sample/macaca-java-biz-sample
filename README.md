@@ -15,7 +15,7 @@ $ git clone https://github.com/Yinxl/autoui.git
 ### 更新依赖
 
 ```
-$ cd autoui
+$ cd bootstrap
 $ mvn -s settings.xml clean install
 ```
 
