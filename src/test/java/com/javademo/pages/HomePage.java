@@ -1,6 +1,6 @@
 package com.javademo.pages;
 
-import com.javademo.common.BasePage;
+import macaca.java.biz.BasePage;
 import com.javademo.pageuis.HomePageUI;
 
 public class HomePage extends BasePage{
@@ -22,21 +22,21 @@ public class HomePage extends BasePage{
 	public void tabWebView(){
 		driver.onclickBean(HomePageUI.WEBVIEW_TAB);
 	}
-	
-	/** 
+
+	/**
 	 * 点击百度
 	 */
 	public void tabBaiDu(){
 		driver.onclickBean(HomePageUI.BAIDU_TAB);
 	}
-	
+
 	/**
 	 * 点击Personal tab
 	 */
 	public void tabPersonal() {
 		driver.onclickBean(HomePageUI.PERSONAL_TAB);
 	}
-	
+
 	/**
 	 * 进入List页
 	 */

@@ -1,6 +1,6 @@
 package com.javademo.pages;
 
-import com.javademo.common.BasePage;
+import macaca.java.biz.BasePage;
 import com.javademo.pageuis.WebviewPageUI;
 
 public class WebviewPage extends BasePage{
@@ -16,14 +16,14 @@ public class WebviewPage extends BasePage{
 	public void pushView() {
 		driver.onclickBean(WebviewPageUI.PUSH_VIEW);
 	}
-	
+
 	/**
 	 * 点击popView
 	 */
 	public void popView() {
 		driver.onclickBean(WebviewPageUI.POP_VIEW);
 	}
-	
+
 	/**
 	 * 修改标题
 	 */

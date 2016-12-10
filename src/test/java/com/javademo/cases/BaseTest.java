@@ -1,39 +1,37 @@
 package com.javademo.cases;
 
 import java.io.File;
-import java.sql.Driver;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
 
-import com.javademo.common.BaseErrorType;
-import com.javademo.common.BaseMacacaClient;
-import com.javademo.common.Config;
-import com.javademo.common.ResultGenerator;
-import com.javademo.common.BaseMacacaClient.PlatformType;
+import macaca.java.biz.BaseErrorType;
+import macaca.java.biz.BaseMacacaClient;
+import macaca.java.biz.ResultGenerator;
+import macaca.java.biz.BaseMacacaClient.PlatformType;
+import com.javademo.utils.Config;
 import com.alibaba.fastjson.JSONObject;
 
 public class BaseTest {
 
 	// 屏幕截图的数目，为了实现递增的顺序
 	private int screenNum = 1;
-		
+
 	BaseMacacaClient driver= new BaseMacacaClient();
-	
+
 	@Before
 	public void setUp() throws Exception {
-		
+
 		// 清除日志记录
 		ResultGenerator.clearOldData();
 		//清理截图重新记录
 		File file = new File(Config.ScreenshotPath);
 		deleteOldScreen(file);
-		
+
 		// 初始化应用基础信息
 		JSONObject props = new JSONObject();
 		if (Config.PLATFORM.equals("ios")) {
-			
+
 			// 创建ios实例
 			props.put("app", Config.IOS_APP);
 			props.put("platformName", Config.IOS_PLATFORM_NAME);
@@ -41,35 +39,35 @@ public class BaseTest {
 //			props.put("udid", Config.IOS_UDID);
 			driver.setCurPlatform(PlatformType.IOS);
 		} else {
-			
+
 			//创建安卓实例
 			props.put("app", Config.ADR_APP);
 			props.put("platformName", Config.ADR_PLATFORM_NAME);
 			driver.setCurPlatform(PlatformType.ANDROID);
 		}
-		
+
 		// 覆盖安装
 		props.put("reuse", Config.REUSE);
-		
+
 		JSONObject desiredCapabilities = new JSONObject();
 		desiredCapabilities.put("desiredCapabilities", props);
 		driver.initDriver(desiredCapabilities);
-		
+
 	}
-	
+
 
 	@After
 	public void tearDown() throws Exception {
-		
+
 		try {
 			driver.quit();
 		} catch (Exception e) {
 			// TODO: handle exception
 			ResultGenerator.fail("quit fail", "", BaseErrorType.FUNCTION_FAILED);
 		}
-		
+
 	}
-	
+
 	 /**
 	    * 保存当前屏幕截图-生成的截图会按照截图的先后顺序生成有序的名称
 	    * @param fileName 图片名称，默认为.png格式,图片默认保存在screenShot目录下

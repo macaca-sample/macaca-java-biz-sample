@@ -1,6 +1,6 @@
 package com.javademo.pages;
 
-import com.javademo.common.BasePage;
+import macaca.java.biz.BasePage;
 import com.javademo.pageuis.PersonalPageUI;
 
 public class PersonalPage extends BasePage{
@@ -17,5 +17,5 @@ public class PersonalPage extends BasePage{
 	public void logout() throws Exception{
 		driver.onclickBean(PersonalPageUI.LOG_OUT_BTN);
 	}
-	
+
 }
