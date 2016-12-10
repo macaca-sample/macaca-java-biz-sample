@@ -9,7 +9,7 @@
 ### bootstrap 0.0.2 重磅改动
 将原公共库代码common部分提出来单独建立了代码库，以jar包的形式上传至Jcenter，可通过Maven直接引用。
 
-公共库代码也已开源，详情参考：[https://github.com/Yinxl/macaca-java-biz](https://github.com/Yinxl/macaca-java-biz) 或 [https://github.com/macaca-sample/macaca-java-biz-framework](https://github.com/macaca-sample/macaca-java-biz-framework)(目前两个库都在维护)
+公共库代码也已开源: [https://github.com/macaca-sample/macaca-java-biz-framework](https://github.com/macaca-sample/macaca-java-biz-framework)
 
 欢迎大家引用biz.jar，使用过程中遇到问题，可以提issue,我会尽快解决。
 
