@@ -1,6 +1,6 @@
 package com.javademo.pages;
 
-import com.javademo.common.BasePage;
+import macaca.java.biz.BasePage;
 import com.javademo.pageuis.LoginPageUI;
 
 public class LoginPage extends BasePage {

@@ -1,7 +1,7 @@
 package com.javademo.pageuis;
 
-import com.javademo.common.BasePageUI;
-import com.javademo.common.CommonUIBean;
+import macaca.java.biz.BasePageUI;
+import macaca.java.biz.CommonUIBean;
 
 import macaca.client.common.GetElementWay;
 
@@ -11,5 +11,5 @@ public class WebviewPageUI extends BasePageUI{
 	public static final CommonUIBean PUSH_VIEW = new CommonUIBean(GetElementWay.ID, "pushView",GetElementWay.NAME,"pushView", "pushview");
 	public static final CommonUIBean POP_VIEW = new CommonUIBean(GetElementWay.ID, "popView",GetElementWay.NAME,"popView", "popView");
 	public static final CommonUIBean SET_TITLE = new CommonUIBean(GetElementWay.ID, "setTitle",GetElementWay.NAME,"setTitle", "setTitle");
-	
+
 }

@@ -1,7 +1,7 @@
 package com.javademo.pageuis;
 
-import com.javademo.common.BasePageUI;
-import com.javademo.common.CommonUIBean;
+import macaca.java.biz.BasePageUI;
+import macaca.java.biz.CommonUIBean;
 
 import macaca.client.common.GetElementWay;
 
