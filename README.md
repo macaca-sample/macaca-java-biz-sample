@@ -4,12 +4,12 @@
 
 ### 安装Macaca环境
 
-参考链接：[https://macacajs.github.io/macaca/getting-started.html](https://macacajs.github.io/macaca/getting-started.html)
+参考链接：(Macaca-Java版入门指南)[https://testerhome.com/topics/6431)
 
 ### 下载源码
 
 ```
-$ git clone https://github.com/Yinxl/autoui.git
+$ git clone https://github.com/macaca-sample/macaca-java-biz-sample.git
 ```
 
 ### 更新依赖
