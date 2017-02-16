@@ -17,7 +17,7 @@ $ git clone https://github.com/macaca-sample/macaca-java-biz-sample.git
 ### 2. 更新依赖
 
 ```
-$ cd bootstrap
+$ cd macaca-java-biz-sample
 $ mvn -s settings.xml clean install -DskipTests
 ```
 
@@ -43,7 +43,7 @@ $ macaca server --verbose
 
 ### 4. 执行测试用例
 
-新建cmd窗口 ，执行mvn test
+新建cmd窗口 ，执行mvn test（默认为启动iOS用例）
 ```
 $ mvn test 
 ```
