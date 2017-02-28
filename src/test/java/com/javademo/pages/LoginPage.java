@@ -14,6 +14,7 @@ public class LoginPage extends BasePage {
 	public void login(String username ,String password){
 		driver.inputBean(LoginPageUI.USER_NAME, username);
 		driver.inputBean(LoginPageUI.PASSWORD, password);
+		driver.onclickBean(LoginPageUI.KEY_BOARD);
 		driver.onclickBean(LoginPageUI.LOGIN_BTN);
 	}
 }

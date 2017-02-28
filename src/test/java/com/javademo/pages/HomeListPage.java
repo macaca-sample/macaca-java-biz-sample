@@ -3,8 +3,9 @@ package com.javademo.pages;
 import javax.naming.directory.DirContext;
 
 import com.alibaba.fastjson.JSONObject;
-import macaca.java.biz.BasePage;
 import com.javademo.pageuis.HomeListPageUI;
+
+import macaca.java.biz.BasePage;
 
 public class HomeListPage extends BasePage{
 
@@ -24,9 +25,11 @@ public class HomeListPage extends BasePage{
 		int windowHeight = windowSize.getIntValue("height");
 
 		int centerX=(int)windowWidth/2;
-		driver.swipe(centerX,(int)windowHeight-100, centerX, 300, 500);
+//		driver.swipe(centerX,(int)windowHeight-100, centerX, 300, 500);
+		driver.drag(centerX, (int)windowHeight-100, centerX, 300, 0.05, 10);
 		driver.sleep(1000);
-		driver.swipe(centerX, 300, centerX, (int)windowHeight-100, 500);
+//		driver.swipe(centerX, 300, centerX, (int)windowHeight-100, 500);
+		driver.drag(centerX, 300, centerX, (int)windowHeight-100, 0.05, 10);
 	}
 
 	/**
