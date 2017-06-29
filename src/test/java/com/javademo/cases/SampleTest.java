@@ -1,5 +1,8 @@
 package com.javademo.cases;
 
+import com.alibaba.fastjson.JSONObject;
+import macaca.client.commands.Element;
+import macaca.client.common.GetElementWay;
 import org.junit.Test;
 
 import macaca.java.biz.ResultGenerator;
@@ -51,6 +54,11 @@ public class SampleTest extends BaseTest{
 		HomeListPage homeListPage = new HomeListPage("首页列表页");
 		homeListPage.setDriver(driver);
 		if (homeListPage.hasPageShown(HomeListPageUI.LIST_VIEW)) {
+			Element tableList = driver.findElement(HomeListPageUI.LIST_VIEW);
+
+			System.out.print("总共有" +tableList.countOfChildElements(GetElementWay.CLASS_NAME,"XCUIElementTypeCell") + "个Cell");
+
+
 			saveScreen(homeListPage.pageDesc);
 			ResultGenerator.loadPageSucc(homeListPage);
 

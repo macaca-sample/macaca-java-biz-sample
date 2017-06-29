@@ -26,10 +26,10 @@ public class HomeListPage extends BasePage{
 
 		int centerX=(int)windowWidth/2;
 //		driver.swipe(centerX,(int)windowHeight-100, centerX, 300, 500);
-		driver.drag(centerX, (int)windowHeight-100, centerX, 300, 0.05, 10);
+		driver.drag(centerX, (int)windowHeight-100, centerX, 300, 0.05);
 		driver.sleep(1000);
 //		driver.swipe(centerX, 300, centerX, (int)windowHeight-100, 500);
-		driver.drag(centerX, 300, centerX, (int)windowHeight-100, 0.05, 10);
+		driver.drag(centerX, 300, centerX, (int)windowHeight-100, 0.05);
 	}
 
 	/**
