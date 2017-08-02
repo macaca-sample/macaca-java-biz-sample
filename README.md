@@ -18,7 +18,7 @@ $ git clone https://github.com/macaca-sample/macaca-java-biz-sample.git
 
 ```
 $ cd macaca-java-biz-sample
-$ mvn -s settings.xml clean install -DskipTests
+$ make install
 ```
 
 如果下载依赖过程中报错，可能是由于mvn -s命令没有生效导致的，建议将根目录下settings.xml中的依赖配置到本地Maven目录下的settings.xml中。
@@ -43,9 +43,10 @@ $ macaca server --verbose
 
 ### 4. 执行测试用例
 
-新建cmd窗口 ，执行mvn test（默认为启动iOS用例）
+新建cmd窗口(记得新建cmd窗口哦，不要跟macaca server在同一个窗口执行) ，执行mvn test（默认为启动iOS用例）
+                        
 ```
-$ mvn test 
+$ mvn -s settings.xml test 
 ```
 
 或者选中SampleTest.java,右键执行run as -> JunitTest
