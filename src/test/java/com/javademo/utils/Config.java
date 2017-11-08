@@ -17,7 +17,7 @@ public class Config {
    // 密码
    public static final String PASSWORD = "password";
    // 目标平台- ios android
-   public static final String PLATFORM = "ios";
+   public static final String PLATFORM = "android";
    // 是否覆盖安装 3-覆盖安装
    public static final String REUSE = "3";
 
