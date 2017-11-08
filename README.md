@@ -2,6 +2,9 @@
 
 基于Macaca-Java版的UI自动化实现demo
 
+### 文档参考(从入门到精通)
+[https://testerhome.com/junhe](https://testerhome.com/junhe)
+
 ### 安装Macaca环境
 
 参考链接：(Macaca-Java版入门指南)[https://testerhome.com/topics/6431)
