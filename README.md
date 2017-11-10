@@ -1,8 +1,11 @@
-# bootstrap
+# Bootstrap
+
+---
 
 基于Macaca-Java版的UI自动化实现demo
 
 ### 文档参考(从入门到精通)
+
 [https://testerhome.com/junhe](https://testerhome.com/junhe)
 
 ### 安装Macaca环境
@@ -13,13 +16,13 @@
 
 ### 1. 下载源码
 
-```
+``` bash
 $ git clone https://github.com/macaca-sample/macaca-java-biz-sample.git
 ```
 
 ### 2. 更新依赖
 
-```
+``` bash
 $ cd macaca-java-biz-sample
 $ make install
 ```
@@ -28,17 +31,18 @@ $ make install
 
 ### 如何修改目标平台 ios/android?
 
-```
+``` java
 //package com.javademo.common;
 // Config.java
- // 目标平台- ios android 
-   public static final String PLATFORM = "ios"; 
+// 目标平台- ios android
+
+public static final String PLATFORM = "ios";
 ```
 注意：执行iOS用例时需要将XCode升级到最新的8.1，执行用例前请先启动目标模拟器。
 
 ### 3. 启动server
 
-```
+``` bash
 $ macaca server --verbose
 ```
 
@@ -47,9 +51,9 @@ $ macaca server --verbose
 ### 4. 执行测试用例
 
 新建cmd窗口(记得新建cmd窗口哦，不要跟macaca server在同一个窗口执行) ，执行mvn test（默认为启动iOS用例）
-                        
-```
-$ mvn -s settings.xml test 
+
+``` bash
+$ mvn -s settings.xml test
 ```
 
 或者选中SampleTest.java,右键执行run as -> JunitTest
@@ -57,8 +61,9 @@ $ mvn -s settings.xml test
 ### ReleaseNotes
 
 #### v0.0.2
+
 将原公共库代码common部分提出来单独建立了代码库，以jar包的形式上传至Jcenter，可通过Maven直接引用。
 
-公共库代码也已开源: [https://github.com/macaca-sample/macaca-java-biz-framework](https://github.com/macaca-sample/macaca-java-biz-framework)
+公共库代码也已开源: [//github.com/macaca-sample/macaca-java-biz-framework](//github.com/macaca-sample/macaca-java-biz-framework)
 
 欢迎大家引用biz.jar，使用过程中遇到问题，可以提issue,我会尽快解决。
