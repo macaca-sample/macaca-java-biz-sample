@@ -153,6 +153,8 @@ public class SampleTest extends BaseTest {
             ResultGenerator.loadPageFail(baiDuPage);
         }
 
+        driver.switchFromeWebviewToNative();
+
     }
 
 
