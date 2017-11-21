@@ -16,13 +16,13 @@
 
 ### 1. 下载源码
 
-``` bash
+```bash
 $ git clone https://github.com/macaca-sample/macaca-java-biz-sample.git
 ```
 
 ### 2. 更新依赖
 
-``` bash
+```bash
 $ cd macaca-java-biz-sample
 $ make install
 ```
@@ -31,7 +31,7 @@ $ make install
 
 ### 如何修改目标平台 ios/android?
 
-``` java
+```java
 //package com.javademo.common;
 // Config.java
 // 目标平台- ios android
@@ -42,7 +42,7 @@ public static final String PLATFORM = "ios";
 
 ### 3. 启动server
 
-``` bash
+```bash
 $ macaca server --verbose
 ```
 
@@ -52,7 +52,7 @@ $ macaca server --verbose
 
 新建cmd窗口(记得新建cmd窗口哦，不要跟macaca server在同一个窗口执行) ，执行mvn test（默认为启动iOS用例）
 
-``` bash
+```bash
 $ mvn -s settings.xml test
 ```
 
