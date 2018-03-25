@@ -67,3 +67,15 @@ $ mvn -s settings.xml test
 公共库代码也已开源: [//github.com/macaca-sample/macaca-java-biz-framework](//github.com/macaca-sample/macaca-java-biz-framework)
 
 欢迎大家引用biz.jar，使用过程中遇到问题，可以提issue,我会尽快解决。
+
+<!-- GITCONTRIBUTOR_START -->
+
+## Contributors
+
+|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>
+| :---: |
+
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor.git), auto upated at `Sun Mar 25 2018 17:35:43 GMT+0800`.
+
+<!-- GITCONTRIBUTOR_END -->
